@@ -7,7 +7,12 @@ def encode(code):
             output += str(int(code[i]) + 3)
     return output
 
-
+def decode(password):
+    p=password
+    final=""
+    for letter in p:
+        final+=str(int(letter)-3)
+    return final
 
 running = True
 while running:
